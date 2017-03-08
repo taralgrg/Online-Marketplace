@@ -1,0 +1,25 @@
+{{#if addNewProduct}}
+  <h1>New Product</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="model">Model</label>
+        {{input value=model id="model"}}
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        {{input value=price id="price"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button {{action 'saveProduct1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'productFormShow'}}>New Product</button>
+{{/if}}
