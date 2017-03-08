@@ -5,9 +5,7 @@ Our watches are synonymous with style, elegance, and sophistication. <br><br><br
 <ul>
   {{#each model as |product|}}
   <div class = "col-md-5">
-     <li>{{product.model}} <br> {{product.price}} <br>
-      <img class="listing" src={{product.image}}>
-    </li>
+    {{product-tile product=product}}
   </div>
   {{/each}}
 </ul>
