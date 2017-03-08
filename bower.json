@@ -1,5 +1,6 @@
 {
   "name": "marketplace",
   "dependencies": {
+    "bootstrap": "^3.3.7"
   }
 }

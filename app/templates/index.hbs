@@ -1,0 +1,13 @@
+<br><br><br><h1> Welcome to Taral's Watches </h1>
+
+Our watches are synonymous with style, elegance, and sophistication. <br><br><br><br>
+
+<ul>
+  {{#each model as |product|}}
+  <div class = "col-md-5">
+     <li>{{product.model}} <br> {{product.price}} <br>
+      <img class="listing" src={{product.image}}>
+    </li>
+  </div>
+  {{/each}}
+</ul>
