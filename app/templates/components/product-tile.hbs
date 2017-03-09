@@ -1,4 +1,7 @@
 <li>
-  {{#link-to 'product' product}}{{product.model}} <br> {{product.price}}{{/link-to}}
+  {{#link-to 'product' product}}{{product.model}} <br>
+  {{product.price}}{{/link-to}}
   <p><img class="image" src={{product.image}}></p>
+
+<button {{action 'addToCart' product}}>Add to Cart</button>
 </li>

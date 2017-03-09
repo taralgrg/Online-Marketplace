@@ -3,7 +3,6 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     update(product, params) {
-      debugger;
       this.sendAction('update', product, params);
     },
     delete(product) {
