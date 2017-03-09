@@ -1,15 +1,18 @@
 <br><br><br><h1> Welcome to Taral's Watches </h1>
 
 Our watches are synonymous with style, elegance, and sophistication. <br><br><br><br>
-
-<ul>
-  {{#each model as |product|}}
-  <div class = "col-md-4">
-    {{product-tile product=product}}
-  </div>
-  {{/each}}
-</ul>
-{{display-cart}}
+<div class="col-md-8">
+  <ul>
+    {{#each model as |product|}}
+    <div class = "col-md-4">
+      {{product-tile product=product}}
+    </div>
+    {{/each}}
+  </ul>
+</div>
+<div class="col-md-2">
+   {{display-cart}}
+</div>
 <!-- <ul>
   {{#each model as |product|}}
     {{product-detail product=product destroyProduct="destroyProduct"}}

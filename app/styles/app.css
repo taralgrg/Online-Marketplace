@@ -6,3 +6,11 @@
   height: 400px;
   width: 200px;
 }
+.displaystyle {
+  float:right;
+ text-align: center;
+}
+.totalstyle {
+  border: 1px solid black;
+text-align: center;
+}

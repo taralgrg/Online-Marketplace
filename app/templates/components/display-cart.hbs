@@ -1,5 +1,14 @@
-{{#each shoppingCart.items as |item|}}
 <div>
-  {{item.model}} -- {{item.price}}
-</div>
+<ul>
+  <ol>
+{{#each shoppingCart.items as |item|}}
+ <li>
+    {{item.model}} -- {{item.currency}}{{item.price}}
+  </li>
 {{/each}}
+</ol>
+</ul>
+  <div class = "totalstyle">
+  Total = USD {{shoppingCart.subTotal}}
+  </div>
+</div>
